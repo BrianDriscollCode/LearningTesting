@@ -11,7 +11,7 @@ class DollarTest {
     void getMultiplyTest()
     {
         Dollar dollar = new Dollar(5);
-        Dollar result = dollar.times(2);
+        Money result = dollar.times(2);
         int amount = result.amount;
 
         assertEquals(10, amount);
@@ -20,7 +20,7 @@ class DollarTest {
     @Test
     void testMultiplication()
     {
-        Dollar five  = new Dollar(5);
+        Money five = Money.dollar(5);
         assertEquals(new Dollar(10), five.times(2));
         assertEquals(new Dollar(15), five.times(3));
 

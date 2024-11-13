@@ -10,7 +10,7 @@ class FrancTest {
     void getMultiplyTest()
     {
         Franc franc = new Franc(5);
-        Franc result = franc.times(2);
+        Money result = franc.times(2);
         int amount = result.amount;
 
         assertEquals(10, amount);

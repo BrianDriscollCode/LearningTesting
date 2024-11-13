@@ -1,17 +1,16 @@
 package org.example;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DollarTest {
+class FrancTest {
 
     @Test
     void getMultiplyTest()
     {
-        Dollar dollar = new Dollar(5);
-        Dollar result = dollar.times(2);
+        Franc franc = new Franc(5);
+        Franc result = franc.times(2);
         int amount = result.amount;
 
         assertEquals(10, amount);
@@ -20,10 +19,9 @@ class DollarTest {
     @Test
     void testMultiplication()
     {
-        Dollar five  = new Dollar(5);
-        assertEquals(new Dollar(10), five.times(2));
-        assertEquals(new Dollar(15), five.times(3));
+        Franc five  = new Franc(5);
+        assertEquals(new Franc(10), five.times(2));
+        assertEquals(new Franc(15), five.times(3));
 
     }
-
 }
